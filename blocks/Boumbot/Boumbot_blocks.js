@@ -274,11 +274,11 @@ Blockly.Blocks['Boumbot_melody'] = {
     this.appendDummyInput("")
 		.appendField(Blockly.Msg.Boumbot_melody001)
         .appendField(new Blockly.FieldImage("blocks/Boumbot/img/son.png", Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
-    this.appendValueInput("NUM")
-		.setCheck('Number')
+	this.appendDummyInput("")
         .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField(Blockly.Msg.Boumbot_melody002);
-    this.setInputsInline(false);
+        .appendField(Blockly.Msg.Boumbot_melody002)
+	    .appendField(new Blockly.FieldDropdown(["1", "2", "3", "4", "5", "6", "7", "8"]), "melody");
+	this.setInputsInline(false);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setTooltip(Blockly.Msg.Boumbot_melody003);
