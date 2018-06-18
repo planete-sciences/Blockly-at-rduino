@@ -129,7 +129,12 @@ Blockly.Blocks['Boumbot_vitesse_moteur_gauche'] = {
 	this.appendDummyInput("")
         .appendField(Blockly.Msg.Boumbot_vitesse_moteur_gauche001)
         .appendField(new Blockly.FieldImage("blocks/Boumbot/img/vitesseGauche.png", Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
-    this.setPreviousStatement(true, null);
+	this.appendValueInput("vitesse")
+		.setCheck('Number')
+        .setAlign(Blockly.ALIGN_RIGHT)
+		.appendField(Blockly.Msg.Boumbot_vitesse_moteur_gauche002);
+	this.setInputsInline(false);    
+	this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setTooltip(Blockly.Msg.Boumbot_vitesse_moteur_gauche002);
   }
@@ -143,7 +148,12 @@ Blockly.Blocks['Boumbot_vitesse_moteur_droit'] = {
 	this.appendDummyInput("")
         .appendField(Blockly.Msg.Boumbot_vitesse_moteur_droit001)
         .appendField(new Blockly.FieldImage("blocks/Boumbot/img/vitesseDroite.png", Blockly.Arduino.imageSize, Blockly.Arduino.imageSize));
-    this.setPreviousStatement(true, null);
+	this.appendValueInput("vitesse")
+		.setCheck('Number')
+        .setAlign(Blockly.ALIGN_RIGHT)
+		.appendField(Blockly.Msg.Boumbot_vitesse_moteur_droit002);
+	this.setInputsInline(false);
+	this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setTooltip(Blockly.Msg.Boumbot_vitesse_moteur_droit002);
   }

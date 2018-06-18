@@ -357,8 +357,20 @@
 			<block type="Boumbot_tourne_droite"></block>
 			<block type="Boumbot_pas_gauche"></block>			
 			<block type="Boumbot_pas_droite"></block>
-			<block type="Boumbot_vitesse_moteur_gauche"></block>
-			<block type="Boumbot_vitesse_moteur_droit"></block>			
+			<block type="Boumbot_vitesse_moteur_gauche">
+				<value name="vitesse">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="Boumbot_vitesse_moteur_droit">
+				<value name="vitesse">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>
+			</block>			
 		</category>		
 		<category name="CAT_BOUMBOT_IN" colour="#660066">
 			<block type="Boumbot_obstacle"></block>
