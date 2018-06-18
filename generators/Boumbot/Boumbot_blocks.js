@@ -103,6 +103,12 @@ Blockly.Arduino.Boumbot_son = function() {
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
+Blockly.Arduino.Boumbot_melody = function() {
+  var melody = this.getFieldValue('melody');
+  
+  var code = "boumbot.melody("+melody+");\n";
+  return code;
+};
 
 Blockly.Arduino.Boumbot_led = function() {
   var red = Blockly.Arduino.valueToCode(this, 'Red', Blockly.Arduino.ORDER_ATOMIC);
