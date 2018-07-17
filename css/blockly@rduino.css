@@ -17,7 +17,7 @@ body {
 	font-family: "OpenDyslexic";
 }
 
-.rotate180 {
+/*.rotate180 {
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
 	-o-transform: rotate(180deg);
@@ -37,7 +37,7 @@ body {
 	-moz-transform: rotate(90deg);
 	-o-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
-}
+}*/
 
 #header {
 	background: #00969C;
@@ -148,37 +148,48 @@ html[dir="RTL"] .menuPanel-ver {
 .div_help_button-ver {
     width: 200px;
     bottom: 10px;
-    position: absolute;
+	padding: 5px;
+/*    position: absolute;*/
     text-align: center;
 }
 
 .div_tools_button-ver {
     width: 200px;
     bottom: 50px;
-    position: absolute;
+	padding: 5px;
+/*    position: absolute;*/
     text-align: center;
+}
+
+#btn_for_menu{
+	
 }
 
 #div_about {
     width: 200px;
     bottom: 130px;
-    position: absolute;
+	padding: 5px;
+/*    position: absolute;*/
     text-align: center;
 }
 
 .div_help_button-hor {
     padding-left: 0px;
     bottom: 10px;
-    position: absolute;
+	padding: 5px;
+/*    position: absolute;*/
     text-align: center;
 }
 
 #div_accessibility_button {
     width: 200px;
     bottom: 90px;
-    position: absolute;
+	padding: 5px;
+/*    position: absolute;*/
     text-align: center;
 }
+
+
 
 html[dir="RTL"] .navbar-right {
     margin-right: -50px;
@@ -390,6 +401,15 @@ html[dir="RTL"] #select_all {
 
 .blocklySvg {
 	border-top: none !important;
+}
+
+#div_arduino_btn {
+	max-height: 10%;
+}
+
+.btn-primary{
+	max-height:8%;
+	margin: 3px;
 }
 
 #debug_arduino {
