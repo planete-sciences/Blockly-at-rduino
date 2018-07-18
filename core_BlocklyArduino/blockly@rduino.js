@@ -814,7 +814,7 @@ BlocklyDuino.init = function() {
 	
 	BlocklyDuino.testAjax();
 					
-	BlocklyDuino.firstBlocklyArduino();
+	//BlocklyDuino.firstBlocklyArduino(); //mis en commentaire pour ne pas avoir le pop-up lors du lancement en atelier.
 	
 	if ($('#toolbox').length) {
 		BlocklyDuino.toolboxInIndexHtml = true;		
