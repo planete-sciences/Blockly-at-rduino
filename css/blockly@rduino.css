@@ -47,11 +47,13 @@ body {
 #logo_Titre {
 	background: #FFFFFF;
 	float: left;
+	width:205px;
 }
 
 #header_titres {
 	margin-left: 205px;
 	position: absolute;
+	width:40%;
 }
 
 #divTitre, #divTitreMenu {
@@ -59,7 +61,7 @@ body {
 }
 
 #divTitre p {
-	font-size: 15px;
+	font-size: 12px;
 	font-family: "OpenDyslexic";
 }
 
@@ -73,7 +75,11 @@ body {
 	float: right;
 	margin-top: 5px;
 	margin-right: 10px;
+	width:50%;
+	text-align:right;
 }
+
+
 
 #divBody {
     position: absolute;
@@ -161,9 +167,6 @@ html[dir="RTL"] .menuPanel-ver {
     text-align: center;
 }
 
-#btn_for_menu{
-	
-}
 
 #div_about {
     width: 200px;
@@ -235,6 +238,10 @@ html[dir="RTL"] .menuPanelBlockly-hor, html[dir="RTL"] .menuPanelBlockly-ver {
 html[dir="RTL"] .menuPanelFiles-hor {
     float: left;
     padding-left: 10px;
+}
+
+#btn_for_menu{
+
 }
 
 .divTabpanel-hor {
