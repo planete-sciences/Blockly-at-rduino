@@ -49,13 +49,19 @@ Blockly.Arduino.Boumbot_pas_droite = function() {
 };
 
 Blockly.Arduino.Boumbot_vitesse_moteur_gauche = function() {
-  var code = 'boumbot.vitesseGauche();\n';
-  return [code, Blockly.Arduino.ORDER_ATOMIC];
+	var vitG = Blockly.Arduino.valueToCode(this, 'vitesse', Blockly.Arduino.ORDER_ATOMIC);
+  //var tps = Blockly.Arduino.valueToCode(this. 'TPS', Blockly.Arduino.ORDER_ATOMIC);
+	var code = "boumbot.vitesseGauche("+vitG+");\n";
+  
+	return code;
 };
 
 Blockly.Arduino.Boumbot_vitesse_moteur_droit = function() {
-  var code = 'boumbot.vitesseDroite();\n';
-  return [code, Blockly.Arduino.ORDER_ATOMIC];
+	var vitD = Blockly.Arduino.valueToCode(this, 'vitesse', Blockly.Arduino.ORDER_ATOMIC);
+	//var tps = Blockly.Arduino.valueToCode(this. 'TPS', Blockly.Arduino.ORDER_ATOMIC);
+	var code = "boumbot.vitesseDroite("+vitD+");\n";
+
+	return code;
 };
 
 Blockly.Arduino.Boumbot_obstacle = function() {
@@ -94,9 +100,15 @@ Blockly.Arduino.Boumbot_son = function() {
   //var tps = Blockly.Arduino.valueToCode(this. 'TPS', Blockly.Arduino.ORDER_ATOMIC);
 
   var code = "boumbot.son("+num+");\n";
-  return code;
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
+Blockly.Arduino.Boumbot_melody = function() {
+  var melody = this.getFieldValue('melody');
+  
+  var code = "boumbot.melody("+melody+");\n";
+  return code;
+};
 
 Blockly.Arduino.Boumbot_led = function() {
   var red = Blockly.Arduino.valueToCode(this, 'Red', Blockly.Arduino.ORDER_ATOMIC);
