@@ -21,7 +21,7 @@ var BlocklyDuino = {};
 Blockly.pathToBlockly = './';
 Blockly.pathToMedia = './media/';
 
-BlocklyDuino.selectedToolbox = "toolbox_none";
+BlocklyDuino.selectedToolbox = "toolbox_boumbot";
 BlocklyDuino.selectedCard = 'kit_boumbot';
 BlocklyDuino.selectedTab = 'blocks';
 BlocklyDuino.inlineBool = true;
@@ -814,7 +814,7 @@ BlocklyDuino.init = function() {
 	
 	BlocklyDuino.testAjax();
 					
-	BlocklyDuino.firstBlocklyArduino();
+	//BlocklyDuino.firstBlocklyArduino(); //mis en commentaire pour ne pas avoir le pop-up lors du lancement en atelier.
 	
 	if ($('#toolbox').length) {
 		BlocklyDuino.toolboxInIndexHtml = true;		

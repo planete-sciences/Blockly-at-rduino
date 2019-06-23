@@ -17,7 +17,7 @@ body {
 	font-family: "OpenDyslexic";
 }
 
-.rotate180 {
+/*.rotate180 {
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
 	-o-transform: rotate(180deg);
@@ -37,7 +37,7 @@ body {
 	-moz-transform: rotate(90deg);
 	-o-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
-}
+}*/
 
 #header {
 	background: #00969C;
@@ -47,11 +47,13 @@ body {
 #logo_Titre {
 	background: #FFFFFF;
 	float: left;
+	width:205px;
 }
 
 #header_titres {
 	margin-left: 205px;
 	position: absolute;
+	width:40%;
 }
 
 #divTitre, #divTitreMenu {
@@ -59,7 +61,7 @@ body {
 }
 
 #divTitre p {
-	font-size: 15px;
+	font-size: 12px;
 	font-family: "OpenDyslexic";
 }
 
@@ -73,7 +75,11 @@ body {
 	float: right;
 	margin-top: 5px;
 	margin-right: 10px;
+	width:50%;
+	text-align:right;
 }
+
+
 
 #divBody {
     position: absolute;
@@ -148,37 +154,45 @@ html[dir="RTL"] .menuPanel-ver {
 .div_help_button-ver {
     width: 200px;
     bottom: 10px;
-    position: absolute;
+	padding: 5px;
+/*    position: absolute;*/
     text-align: center;
 }
 
 .div_tools_button-ver {
     width: 200px;
     bottom: 50px;
-    position: absolute;
+	padding: 5px;
+/*    position: absolute;*/
     text-align: center;
 }
+
 
 #div_about {
     width: 200px;
     bottom: 130px;
-    position: absolute;
+	padding: 5px;
+/*    position: absolute;*/
     text-align: center;
 }
 
 .div_help_button-hor {
     padding-left: 0px;
     bottom: 10px;
-    position: absolute;
+	padding: 5px;
+/*    position: absolute;*/
     text-align: center;
 }
 
 #div_accessibility_button {
     width: 200px;
     bottom: 90px;
-    position: absolute;
+	padding: 5px;
+/*    position: absolute;*/
     text-align: center;
 }
+
+
 
 html[dir="RTL"] .navbar-right {
     margin-right: -50px;
@@ -224,6 +238,10 @@ html[dir="RTL"] .menuPanelBlockly-hor, html[dir="RTL"] .menuPanelBlockly-ver {
 html[dir="RTL"] .menuPanelFiles-hor {
     float: left;
     padding-left: 10px;
+}
+
+#btn_for_menu{
+
 }
 
 .divTabpanel-hor {
@@ -390,6 +408,15 @@ html[dir="RTL"] #select_all {
 
 .blocklySvg {
 	border-top: none !important;
+}
+
+#div_arduino_btn {
+	max-height: 10%;
+}
+
+.btn-primary{
+	max-height:8%;
+	margin: 3px;
 }
 
 #debug_arduino {
